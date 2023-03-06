@@ -21,11 +21,7 @@
             Person newEntry1 = new Person { firstName = "Sagar", lastName = "Shahu", city = "Nagpur", state = "Maharashtra", zipcode = "440023", country = "India", phone = "55455665", email = "shahu@gmail.com" };
             if (people.Any(e => e.city == newEntry1.city || e.state == newEntry1.state))
             {
-                Console.WriteLine("Multiple Person in same state and same city" + " Name : " + newEntry1.firstName + ", State : " + newEntry1.state + ", City : " + newEntry1.city);
-            }
-            else
-            {
-                people.Add(newEntry1);
+                Console.WriteLine("Contact : " + newEntry1.phone);
             }
 
 
